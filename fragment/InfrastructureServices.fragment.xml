@@ -1,0 +1,283 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:l="sap.ui.layout">
+	<Panel id="infrastructureServicesPanel" width="auto" height="auto">
+		<headerToolbar>
+			<OverflowToolbar height="4rem">
+				<Title class="titleBold sa" wrapping="true" level="H1" titleStyle="H1" 
+					text="Consulting, Implementation, Management – to Increase Your Business Sustainability"/>
+			</OverflowToolbar>
+		</headerToolbar>
+		<content>
+			<l:BlockLayout
+				id="BlockLayout"
+				background="Default">
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<Carousel id="carou" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+							<pages>
+								<Image src="./images/it-infrastructure-services_1.png" alt="Example picture of speakers"/>
+							</pages>
+						</Carousel>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+							<Title wrapping="true" level="H4" titleStyle="H4" 
+								text="Necessity’s IT team delivers a full set of services to keep your IT infrastructure reliable with on-going infrastructure administration, continuous monitoring and prompt troubleshooting. We are also ready to plan, implement and manage changes in your IT environment to support the uninterrupted flow of your business operations."/>
+
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<OverflowToolbar height="4rem">
+							<Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" 
+								text="Why Collaborate with NECESSITY"/>
+						</OverflowToolbar>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<VBox class="sapUiSmallMargin">
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="2rem" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="30 years in the IT industry."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="2rem" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="11 years of experience in ITSM"/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="2rem" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="Recognized Microsoft Partner granted with 7 Gold Competencies, including such infrastructure-specific competencies as Cloud Platform, Datacenter, Data Platform, and Messaging."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="2rem" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="An expert IT team holding a range of certificates, among which are AWS Certified Solution Architect, Red Hat Certified System Administrator (RHCSA), Microsoft Certified Professional (MCP), AWS Certified SysOps Administrator (SOA)."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="2rem" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="Personal approach to each customer with consideration to their industry specificity."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="2rem" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="Ensuring pricing transparency and SLA flexibility."/>
+							</HBox>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<OverflowToolbar height="4rem">
+							<Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" 
+								text="IT Infrastructure Services Necessity Delivers"/>
+						</OverflowToolbar>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<VBox class="sapUiSmallMargin">
+							<Title wrapping="true" level="H4" titleStyle="H4" 
+								text="Necessity offers comprehensive IT infrastructure services with a focus on:"/>
+							<Carousel id="carou2" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+								<pages>
+									<Image src="./images/it-infrastructure-services-we-deliver.png" alt="Example picture of speakers"/>
+								</pages>
+							</Carousel>
+							<Title class="titleBold" wrapping="true" level="H2" titleStyle="H2" 
+								text="Enterprise-wide infrastructure services"/>
+							<Title wrapping="true" level="H4" titleStyle="H4" 
+								text="We relieve you from the necessity to cope with various IT infrastructure issues with our consulting and management services covering your cloud solutions, data centers, virtual desktop infrastructures, and the application of DevOps practices."/>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell width="20">
+									<Image src="./images/it-infrastructure-consulting_1.png" alt="Example picture of speakers"/>
+					</l:BlockLayoutCell>
+					<l:BlockLayoutCell width="80">
+						<VBox>
+							<Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" 
+								text="IT infrastructure consulting"/>
+							<Title class="sapUiTinyMarginBottom"  wrapping="true" level="H4" titleStyle="H4" 
+								text="Our team can assist you in determining your current IT infrastructure state, and further help you build and realize an IT strategy aimed at improving your IT infrastructure efficiency."/>
+							<Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+								text="Necessity offers the following services in terms of IT infrastructure consulting:"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Audit of the entire IT infrastructure according to the industry standards if applicable (e.g., HIPAA, PCI DSS, GDPR)."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Analysis of the IT infrastructure management processes based on ITIL principles and their further optimization."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Designing a detailed plan to improve your IT infrastructure performance."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Identifying operational issues and data protection risks and defining a way to eliminate them."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Providing consultations and trainings for your employees to improve their infrastructure management skills."/>
+							</HBox>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell width="20">
+						<Image src="./images/it-infrastructure-management.png" alt="Example picture of speakers"/>
+					</l:BlockLayoutCell>
+					<l:BlockLayoutCell width="80">
+						<VBox>
+							<Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" 
+								text="IT infrastructure management"/>
+							<Title class="sapUiTinyMarginBottom"  wrapping="true" level="H4" titleStyle="H4" 
+								text="Our offering in terms of IT infrastructure management includes the following services:"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class=" titleBold" wrapping="true" level="H4" titleStyle="H4" 
+									text="IT infrastructure administration"/>
+							</HBox>
+							<Title class="sapUiSmallMarginBottom listStylePadded" wrapping="true" level="H4" titleStyle="H4" 
+									text="We apply our long-term experience in ITSM to maintain the performance of your network, Windows and Linux servers, databases, hardware and software operability to help you keep a high level of your business productivity and minimize systems downtime"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="titleBold" wrapping="true" level="H4" titleStyle="H4" 
+									text="IT infrastructure monitoring"/>
+							</HBox>
+							<Title class="sapUiSmallMarginBottom listStylePadded" wrapping="true" level="H4" titleStyle="H4" 
+									text="With the help of such tools as System Center Configuration Manager (for Windows servers) and Ansible (both for Windows and Linux) our team is well versed in, ScienceSoft can detect and mitigate performance or security issues before your employees or external users find them. Thus, we’ll help you maintain a high level of user satisfaction"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="titleBold" wrapping="true" level="H4" titleStyle="H4" 
+									text="IT infrastructure troubleshooting"/>
+							</HBox>
+							<Title class="sapUiSmallMarginBottom listStylePadded" wrapping="true" level="H4" titleStyle="H4" 
+									text="ScienceSoft’s IT team offers you their 24/7 availability and readiness to mitigate the issues related to your IT infrastructure scalability, its uptime, resource utilization, storage use, and many more"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="titleBold" wrapping="true" level="H4" titleStyle="H4" 
+									text="IT infrastructure evolution"/>
+							</HBox>
+							<Title class="sapUiSmallMarginBottom listStylePadded" wrapping="true" level="H4" titleStyle="H4" 
+									text="We are ready to take the overall responsibility for managing minor and critical changes you need to make in your IT environment, e.g., improve the data protection within your IT infrastructure by proper implementation of security measures like IDS/IPS, DLP, SIEM, or perform a smooth movement of your workloads to the cloud with the minimal downtime"/>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<VBox class="sapUiSmallMargin">
+							<Title class="titleBold" wrapping="true" level="H2" titleStyle="H2" 
+								text="Data center services"/>
+							<Title wrapping="true" level="H4" titleStyle="H4" 
+								text="We relieve you from the necessity to cope with various IT infrastructure issues with our consulting and management services covering your cloud solutions, data centers, virtual desktop infrastructures, and the application of DevOps practices."/>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell width="20">
+									<Image src="./images/data-center-management.png" alt="Example picture of speakers"/>
+					</l:BlockLayoutCell>
+					<l:BlockLayoutCell width="80">
+						<VBox>
+							<Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" 
+								text="Data center management"/>
+							<Title class="sapUiTinyMarginBottom"  wrapping="true" level="H4" titleStyle="H4" 
+								text="Our team can assist you in determining your current IT infrastructure state, and further help you build and realize an IT strategy aimed at improving your IT infrastructure efficiency."/>
+							<Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+								text="Necessity offers the following services in terms of IT infrastructure consulting:"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Audit of the entire IT infrastructure according to the industry standards if applicable (e.g., HIPAA, PCI DSS, GDPR)."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Analysis of the IT infrastructure management processes based on ITIL principles and their further optimization."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Designing a detailed plan to improve your IT infrastructure performance."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Identifying operational issues and data protection risks and defining a way to eliminate them."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Providing consultations and trainings for your employees to improve their infrastructure management skills."/>
+							</HBox>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell width="20">
+									<Image src="./images/data-center-monitoring.png" alt="Example picture of speakers"/>
+					</l:BlockLayoutCell>
+					<l:BlockLayoutCell width="80">
+						<VBox>
+							<Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" 
+								text="Data center monitoring"/>
+							<Title class="sapUiTinyMarginBottom"  wrapping="true" level="H4" titleStyle="H4" 
+								text="Our team can assist you in determining your current IT infrastructure state, and further help you build and realize an IT strategy aimed at improving your IT infrastructure efficiency."/>
+							<Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+								text="Necessity offers the following services in terms of IT infrastructure consulting:"/>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Audit of the entire IT infrastructure according to the industry standards if applicable (e.g., HIPAA, PCI DSS, GDPR)."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Analysis of the IT infrastructure management processes based on ITIL principles and their further optimization."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Designing a detailed plan to improve your IT infrastructure performance."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Identifying operational issues and data protection risks and defining a way to eliminate them."/>
+							</HBox>
+							<HBox>
+								<core:Icon src="sap-icon://initiative" size="1.5rem" class="sapUiSmallMarginEnd"/>
+								<Title class="sapUiSmallMarginBottom" wrapping="true" level="H4" titleStyle="H4" 
+									text="Providing consultations and trainings for your employees to improve their infrastructure management skills."/>
+							</HBox>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell
+						title="Hand Over Your IT Infrastructure Pains to Us"
+						titleAlignment="Begin"
+						class="customCellImageBackground">
+						<Text text="Reach out to our team to get more details on the most efficient ways to improve your IT infrastructure management process, accelerate the modernization and increase the efficiency of your IT environment." />
+						<l:titleLink>
+							<Link text="Hand Over Your IT Infrastructure Pains to Us" emphasized="true" press="onContactUsPress" />
+						</l:titleLink>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+			</l:BlockLayout>
+		</content>
+	</Panel>
+</core:FragmentDefinition>

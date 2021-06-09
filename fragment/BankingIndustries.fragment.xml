@@ -1,0 +1,130 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:l="sap.ui.layout">
+    <Panel id="bankingIndustriesPanel" width="auto" height="auto">
+        <headerToolbar>
+            <OverflowToolbar height="4rem">
+                <Title class="titleBold sa" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/bankingsw/0/mainTitle}" />
+            </OverflowToolbar>
+        </headerToolbar>
+        <content>
+            <l:BlockLayout id="BlockLayout1" background="Default">
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <Carousel id="carou1" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+                            <pages>
+                                <Image src="{IndustryData>/bankingsw/0/items/0/pict}" alt="Example picture of speakers" />
+                            </pages>
+                        </Carousel>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/bankingsw/0/mainText}" />
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/bankingsw/1/mainTitle" />
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <Carousel id="carou3" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged" pages="{IndustryData>/bankingsw/1/items}">
+                            <pages>
+                                <VBox alignItems="Center" justifyContent="Center">
+                                    <Image src="{IndustryData>pict}" alt="Example picture of speakers" />
+                                    <Title wrapping="true" level="H2" titleStyle="H2" text="{IndustryData>title}" />
+                                </VBox>
+                            </pages>
+                        </Carousel>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox alignItems="Center" justifyContent="Center">
+                            <Button class="buttonStyle" id="contactButton2" text="LEARN MORE" type="Emphasized" press="onContactUsPress" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/bankingsw/2/mainTitle}" />
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox class="sapUiSmallMargin">
+                            <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/bankingsw/2/mainText}" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell width="10">
+                            <Image src="{IndustryData>/bankingsw/2/items/0/pict}" alt="Example picture of speakers" />
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell width="90">
+                            <VBox>
+                                <Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" text="{IndustryData>/bankingsw/2/items/0/title}" />
+                                <Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/bankingsw/2/items/0/text}" />
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell width="10">
+                            <Image src="{IndustryData>/bankingsw/2/items/1/pict}" alt="Example picture of speakers" />
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell width="90">
+                            <VBox>
+                                <Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" text="{IndustryData>/bankingsw/2/items/1/title}" />
+                                <Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/bankingsw/2/items/1/text}" />
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/bankingsw/3/mainTitle}" /> 
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox class="sapUiSmallMargin">
+                            <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/bankingsw/3/mainText}" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell>
+                        	<HBox justifyContent="Center">
+                            	<Image src="{IndustryData>/bankingsw/3/items/0/pict}" alt="Example picture of speakers" width="200%" />
+                            </HBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/bankingsw/4/mainTitle}" /> 
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox class="sapUiSmallMargin">
+                            <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/bankingsw/4/mainText}" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+            </l:BlockLayout>
+        </content>
+    </Panel>
+</core:FragmentDefinition>

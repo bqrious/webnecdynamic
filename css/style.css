@@ -1,0 +1,534 @@
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+ 	margin-right: 0.125rem
+}
+
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+ 	margin-left: 0.125rem
+}
+
+.tStyle{
+height: 9rem;
+width: 11rem;        
+}
+
+.myAppDemoWT .myCustomText {
+	display: inline-block;
+	font-weight: bold;
+}
+
+/*  ProductRating */
+.myAppDemoWTProductRating {
+	padding: 0.75rem;
+}
+
+.myAppDemoWTProductRating .sapMRI {
+	vertical-align: initial;
+}
+
+.sLabel {
+    padding-top: 8px;
+ }
+
+/* NECESSITY */
+
+.genTileCustom {
+        padding-top: 40%;
+        color: black;
+        font-weight: bolder;
+
+}
+.red  {
+  background: red;
+  color: white;
+  height: 200%;
+}
+
+.listStyle {
+    display: flex;
+   /*border: 1px solid;
+    text-align: center !important;*/
+    font-size: 1em;
+    margin-top: 0.5rem;
+   /*padding: 19px;
+    font-weight: bold;*/
+}
+.listStylePadded {
+    display: flex;
+   /*border: 1px solid;
+    text-align: center !important;
+    font-size: 1em;*/
+    margin-left: 2.5rem;
+   /*padding: 19px;
+    font-weight: bold;*/
+}
+.titleBold {
+    /*display: flex;
+   border: 1px solid;
+    text-align: center !important;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+   padding: 19px;*/
+    font-weight: bold;
+
+}
+.customCellImageBackground {
+    color: #fff;
+    background-image: url("Night_sky.jpg");
+    background-size: 100% auto;
+    background-position: 0 80%;
+}
+
+.customCellImageBackground .sapUiBlockCellContent,
+.customCellImageBackground .sapUiBlockCellContent .sapMText {
+    color: #fff;
+}
+
+.cellImgBgHid {
+    color: tomato;
+    background-image: url("hid1.png");
+    background-size: contain, cover;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+.necsFontSpecifications {
+    color: tomato;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left !important;
+    max-width: 100%;
+}
+
+.tileLayout {
+  border: solid 1px;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.buttonStyle {
+    height: 200%;
+}
+
+
+/* Digital Form */
+
+.sTopColumn {
+    width: 5rem;
+    padding-top: 8px;
+    padding-right: 5px;
+   /* width: 10rem;*/
+ }
+ .s4Column {
+    padding-top: 8px;
+    padding-right: 5px;
+    width: 10rem;
+ }
+.s41Column {
+    width: 4rem;
+    padding-top: 8px;
+    padding-right: 4px;
+   /* width: 10rem;*/
+ }
+ .s42Column {
+    padding-top: 8px;
+    padding-right: 4px;
+ 
+ }
+ .s43Column {
+    width: 4rem;
+    padding-top: 104px;
+    /* padding-right: 4px;
+   /* width: 10rem;*/
+ }
+ .s44Column {
+    padding-top: 100px;
+    padding-right: 4px;
+ 
+ }
+ .s45Column {
+    width: 6rem;
+    padding-top: 8px;
+    padding-right: 10px;
+   /* width: 10rem;*/
+ }
+ .s46Column {
+    padding-top: 8px;
+    padding-left: 5px;
+    width: 10rem;
+ }
+   
+ 
+.sapMTB {
+    height: 4rem;
+}
+.sapMListTblCell {
+    vertical-align: middle;
+}
+.sapMTB {
+    height: 4rem;
+    margin-top: .5rem;
+}
+.instructions .sapMFlexItem {
+    text-align: center;
+    font-size: 10px;
+}
+.iMage {
+    height: 4rem;
+    width: 9rem;
+}
+.cOpy {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 12rem;
+    font-weight: bold;
+}
+.cOpyx {
+    font-size: 16px;
+    text-align: center;
+    /*padding: 5px;*/
+    padding: 10px;
+    margin-left: 5rem;
+    font-weight: bold;
+}
+.cOpyz {
+    font-size: 14px;
+    text-align: center;
+    /*padding: 5px;*/
+    padding: 10px;
+    margin-left: 5rem;
+    font-weight: bold;
+}
+.cOpyp {
+    /*font-size: 14px;*/
+    text-align: center;
+    /*padding: 5px;*/
+    /*padding: 10px;*/
+    margin: auto;
+    font-weight: bold;
+}
+.cOpyg {
+    /*font-size: 14px;*/
+    text-align: center;
+    /*padding: 5px;*/
+    padding-right: 10rem;
+    margin: auto;
+    font-weight: bold;
+}
+.pRoofofDelivery {
+    font-weight: bold;
+}
+.senderReciever {
+    min-width: 100px;
+    font-size: 10px;
+    /*    width: 8rem;*/
+}
+.dateofship {
+    display: flex;
+    border: 0px solid;
+    height: 3rem;
+    text-align: center;
+}
+.bold {
+    font-weight: bold !important;
+}
+.haulierInstructions {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.nOtes {
+    margin-top: 1rem;
+    font-size: 11px;
+    margin-bottom: 2rem;
+}
+.fontSpecifications.sapMText {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center !important;
+    max-width: 100%;
+}
+.sIgnaturebox3 {
+    flex: 1;
+    border: 1px solid;
+    text-align: center !important;
+    width: 21.5rem;
+}
+.issueSignature {
+    display: flex;
+    border: 1px solid;
+    text-align: center !important;
+    font-size: 8px;
+    padding: 19px;
+    font-weight: bold;
+}
+
+
+.cUstomer {
+    display: flex;
+    border: 0px solid;
+    height: 3rem;
+    text-align: center;
+}
+.squareBorder {
+    flex: 1;
+    border: 1px solid;
+    text-align: center;
+}
+.iMage2 {
+    width: 9rem;
+    margin-left: 1rem;
+}
+.bOld {
+    font-weight: bold;
+}
+.vErtical {
+    display: flex;
+    flex: 1;
+    border: 1px solid;
+    text-align: center;
+    font-size: 10px;
+    padding: 16px;
+}
+.nOtes {
+    margin-top: 2rem;
+    font-size: 11px;
+}
+.hBoxL12 {
+    width: 98.5%;
+}
+.hBoxL122 {
+    width: 98.5%;
+    border: 1px solid;
+}
+.hBoxL123 {
+    width: 98.5%;
+    border-left: 1px solid;
+    padding-left: 2px;
+    text-align: center;
+}
+.hBoxL124 {
+    width: 98.5%;
+    border: 1px solid;
+    text-align: center;
+    padding-left: 40%;
+}
+.signAlign {
+    margin: 2px;
+}
+.signFont {
+    font-size: 12px;
+    padding: 1px;
+}
+.sIgnaturebox {
+    display: flex;
+    /* border: 2px solid; */
+    text-align: center;
+}
+.sIgnaturebox1 {
+    display: flex;
+    border: 1px solid;
+    text-align: left;
+    width: 57%;
+}
+.sIgnaturebox2 {
+    flex: 1;
+    border: 1px solid;
+    text-align: center;
+    /* width: 24%; */
+}
+.tOtalpieces {
+    margin-top: 1rem;
+}
+.pIeces {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+.dRoplocation {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 13px;
+}
+.cHeckbox {
+    padding: 20px;
+    margin-left: 2rem;
+}
+.send_Rec {
+    margin-top: 9px;
+}
+.instructions .sapMFlexItem {
+    text-align: center;
+}
+.instructions {
+    width: 100%;
+    margin-bottom: 4px;
+}
+.footer {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 3px;
+    font-size: 8px;
+    margin-top: 6px;
+}
+.clearFix {
+    clear: both;
+}
+.fontText {
+    font-size: 11px;
+}
+.fontValue {
+    font-size: 9px;
+}
+.printAreaBox {
+    max-width: 210mm;
+    margin: auto;
+    background-color: white;
+}
+.printAreaBox1 {
+    max-width: 210mm;
+    margin: auto;
+    background-color: black;
+}
+.printAreaBox2 {
+    max-width: 210mm;
+    margin: auto;
+}
+.notProof {
+    margin-top: 10px;
+    text-align: center;
+    width: 29%;
+    font-weight: bold;
+    float: right;
+    margin-left: 8rem;
+}
+.billiInfoBox {
+    width: 40%;
+    /*   float: left;*/
+    padding-left: 16px;
+}
+.billInfoLabel.sapMText {
+    display: flex;
+    font-size: 10px;
+    line-height: 20px;
+    width: 10rem;
+}
+.address {
+    width: 37%;
+}
+.billiInfoBox {
+    width: 40%;
+    padding-left: 16px;
+}
+.datesBox {
+    width: 23%;
+    /*padding: 19px;*/
+    padding-right: 0px;
+}
+.addressValue {
+    font-size: 10px;
+}
+.addressHbox {
+    min-height: 64px;
+}
+.instructionLine {
+    font-size: 9px;
+}
+.detailInfoBox {
+    width: 80%;
+}
+.rightSignLabelBoxOuter {
+    width: 20%;
+}
+.customTable .sapMListTbl .sapMText {
+    font-size: 11px;
+    font-weight: bold;
+}
+.labelFont .sapMFlexItem .sapMText {
+    font-size: 11px;
+}
+.qrImage {
+    width: 30%;
+}
+.shippingInfo {
+    width: 70%;
+    padding: 13px;
+}
+.detailInfoHBoxOuter {
+    margin-top: 2px;
+}
+.sIgnaturebox1 .sapMFlexItem:first-child {
+    text-align: center;
+}
+.totalLabel {
+    font-size: 13px;
+    margin-left: 17px;
+}
+.customTable {
+    margin-bottom: 2px;
+}
+.proofOfDelivery.sapMHBox {
+    display: flex;
+}
+.alignLeft {
+    padding-bottom: 3px;
+    margin-left: .5rem;
+}
+.nameW {
+    width: 10rem;
+}
+.recSignimgL {
+    width: 9rem;
+    border-bottom: 1px solid;
+    /* margin-left: 0.9rem;
+    margin-top: 1rem;*/
+}
+
+@media print {
+//CSS which are apply in only print
+/* Additional from plunker https://plnkr.co/edit/jjyEPa1updkjBiNZqumS
+ /* define print page default settings */
+    @page {
+        size: portrait;
+        margin: 1.5cm 1cm;
+    }
+    
+    /* scale content to fit print page */
+    html, body {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* reset body */
+    body {
+        margin: 0;
+        padding: 0;
+        float: none; 
+        color: #000;
+    }
+    
+    /* helper class to allow selective hiding elements from printing (ex print button)  */
+    .uoNoPrint {
+        display: none;
+    }    
+    
+    /* fix overflow scrolling */
+    * {
+        overflow-x: visible !important; 
+        overflow-y: visible !important;
+    }
+    
+    /* auto expand collapsed panel contents */
+    .sapMPanelExpandablePart {
+        display: block !important;
+    }
+    
+    /* disable panel content border */
+    .sapMPanelContent {
+        border: 0 !important;
+    }
+    
+    /* reset flexed textareas height */ 
+    .sapMTextArea>.sapMTextAreaInner {
+        height: auto !important;
+    }
+}

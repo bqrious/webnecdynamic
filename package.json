@@ -1,0 +1,24 @@
+{
+  "name": "webnec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Component.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "http-proxy": "^1.18.1",
+    "node-http-server": "^8.1.3",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

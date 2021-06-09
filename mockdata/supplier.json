@@ -1,0 +1,17 @@
+{
+	"SupplierCollection": [
+		{
+			"SupplierName": "NECESSITY INC",
+			"Street": "Jalan Pemuda",
+			"HouseNumber": "C42",
+			"ZIPCode": "31415",
+			"City": "Depok",
+			"Country": "Indonesia",
+			"Url": "http://www.necessity.tech",
+			"Twitter": "@necs",
+			"Tel" : "+62 6227 747474",
+			"Sms" : "+62 173 123456",
+			"Email" : "sales@necessity.tech"
+		}
+	]
+}

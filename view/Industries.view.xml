@@ -1,0 +1,65 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.uxap" xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:goals="SharedBlocks.goals" xmlns:personal="SharedBlocks.personal" xmlns:employment="SharedBlocks.employment" xmlns:core="sap.ui.core" xmlns:blockcolor="SharedBlocks" controllerName="necs.controller.Industries" height="100%">
+    <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" alwaysShowContentHeader="true" editHeaderButtonPress="handleEditBtnPress" >
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <expandedHeading>
+                    <m:Title text="INDUSTRIES" wrapping="true" level="H1" titleStyle="H1" />
+                </expandedHeading>
+                <snappedHeading>
+                    <m:FlexBox fitContainer="true" alignItems="Center">
+                        <m:Title text="INDUSTRIES" wrapping="true" />
+                    </m:FlexBox>
+                </snappedHeading>
+                <snappedTitleOnMobile>
+                    <m:Title text="Header Title On Phone" />
+                </snappedTitleOnMobile>
+                <actions>
+                    <m:Button text="GET A QUOTE" type="Emphasized" press="handleLink1Press" />
+                </actions>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <headerContent>
+            <m:FlexBox wrap="Wrap">
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Title text="To power businesses with a meaningful digital change, Necessity’s team maintains a solid knowledge of trends, needs and challenges in more than 10 industries." level="H2" titleStyle="H2" wrapping="true" />
+                </layout:VerticalLayout>
+            </m:FlexBox>
+        </headerContent>
+        <sections>
+            <ObjectPageSection id="healthCareSection" title="{/navigation/2/items/0/title}">
+                <subSections>
+                    <ObjectPageSubSection id="healthCareSectionSS2">
+                        <blocks>
+							<core:Fragment fragmentName="necs.fragment.HealthcareIndustries" type="XML" />	
+                        </blocks>
+                        <actions>
+                            <m:Button text="GET A QUOTE" type="Emphasized" press="handleLink1Press" />
+                            <m:Button icon="sap-icon://expand" />
+                        </actions>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection id="servicetypesSection" title="{/navigation/2/items/1/title}">
+                <subSections>
+                    <ObjectPageSubSection id="servicetypesSectionSS2">
+                        <blocks>
+							<core:Fragment fragmentName="necs.fragment.BankingIndustries" type="XML" />	
+                        </blocks>
+                        <actions>
+                            <m:Button text="GET A QUOTE" type="Emphasized" press="handleLink1Press" />
+                            <m:Button icon="sap-icon://expand" />
+                        </actions>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+
+        </sections>
+        <footer>
+            <m:OverflowToolbar>
+                <m:ToolbarSpacer />
+                <m:Button type="Accept" text="Accept" />
+                <m:Button type="Reject" text="Reject" />
+            </m:OverflowToolbar>
+        </footer>
+    </ObjectPageLayout>
+</mvc:View>

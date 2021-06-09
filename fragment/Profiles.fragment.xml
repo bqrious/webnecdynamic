@@ -1,0 +1,189 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:l="sap.ui.layout"
+		xmlns:form="sap.ui.layout.form"
+	xmlns:gmaps="openui5.googlemaps"
+>
+	<Panel id="infrastructureServicesPanel" width="auto" height="auto">
+		<headerToolbar>
+			<OverflowToolbar height="4rem">
+				<Title class="titleBold sa" wrapping="true" level="H1" titleStyle="H1" 
+					text="Consulting, Implementation, Management – to Increase Your Business Sustainability"/>
+			</OverflowToolbar>
+		</headerToolbar>
+		<content>
+			<l:BlockLayout
+				id="BlockLayout"
+				background="Default">
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<Carousel id="carou" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+							<pages>
+								<Image src="./images/nec1s.png" alt="Example picture of speakers"/>
+							</pages>
+						</Carousel>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+			</l:BlockLayout>
+			<VBox class="sapUiSmallMargin">
+				<form:SimpleForm id="SimpleFormToolbar"
+					editable="true"
+					layout="ResponsiveGridLayout"
+					labelSpanXL="4"
+					labelSpanL="3"
+					labelSpanM="4"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="0"
+					emptySpanL="4"
+					emptySpanM="0"
+					emptySpanS="0"
+					columnsXL="2"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false"
+					ariaLabelledBy="Title1">
+					<form:toolbar>
+						<Toolbar id="TB1">
+							<Title id="Title1" text="Find Us"/>
+							<ToolbarSpacer />
+							<Button icon="sap-icon://settings"/>
+							<Button icon="sap-icon://drop-down-list" />
+						</Toolbar>
+					</form:toolbar>
+					<form:content>
+						<Toolbar ariaLabelledBy="Title2">
+							<Title id="Title2" text="Office"/>
+							<ToolbarSpacer />
+							<Button icon="sap-icon://settings"/>
+						</Toolbar>
+						<Label text="Name" />
+						<Input value="{HRData>/Location/0/CoName}" />
+						<Label text="Street/No." />
+						<Input value="{HRData>/Location/0/Street}">
+						</Input>
+						<Input value="{HRData>/Location/0/HouseNumber}">
+							<layoutData>
+								<l:GridData span="XL2 L1 M3 S4" />
+							</layoutData>
+						</Input>
+						<Label text="ZIP Code/City" />
+						<Input value="{HRData>/Location/0/ZIPCode}">
+							<layoutData>
+								<l:GridData span="XL2 L1 M3 S4" />
+							</layoutData>
+						</Input>
+						<Input value="{HRData>/Location/0/City}" />
+						<Label text="Country" />
+						<Select id="country" selectedKey="{HRData>/Location/0/Country}">
+							<items>
+								<core:Item text="England" key="England"/>
+								<core:Item text="Indonesia" key="Indonesia"/>
+								<core:Item text="USA" key="USA"/>
+							</items>
+						</Select>
+						<Label text="Web" />
+						<Input value="{HRData>/Location/0/Url}" type="Url" />
+						<Label text="Twitter" />
+						<Input value="{HRData>/Location/0/Twitter}" />
+						<Toolbar ariaLabelledBy="Title3">
+							<Title id="Title3" text="Location"/>
+							<ToolbarSpacer />
+							<Button icon="sap-icon://settings"/>
+						</Toolbar>
+						<gmaps:Map height="250px" zoom="12" lat="{HRData>/Location/0/Lat}" lng="{HRData>/Location/0/Long}" apiKey="{HRData>/Location/0/APIkey}">
+					        <gmaps:markers>
+					            <gmaps:Marker lat="{HRData>/Location/0/Lat}" lng="{HRData>/Location/0/Long}" info="{HRData>/Location/0/City}" />
+					        </gmaps:markers>
+					    </gmaps:Map>
+					</form:content>
+				</form:SimpleForm>
+			</VBox>
+			<l:BlockLayout>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+							<Title wrapping="true" level="H4" titleStyle="H4" class="sapUiTinyMarginBottom"
+								text="Founded in 1989, ScienceSoft is a US-headquartered provider of IT consulting services and custom software development with 700 IT professionals located internationally."/>
+							<Title wrapping="true" level="H4" titleStyle="H4"
+								text="For over 30 years we’ve been bringing custom and platform-based solutions to large and midsized companies in Healthcare, Banking, Retail, Telecom and other industries. Walmart, Nestle, eBay, NASA JPL, T-Mobile, Baxter, MT bank along with other influencers rely on our solutions in their daily operations."/>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<VBox class="sapUiSmallMargin">
+							<HBox>
+								<Image src="./images/experience.png" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiLargeMarginBottom" width="20rem"
+									text="30 years in the IT industry."/>
+								<Image src="./images/employees.png" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="700 IT professionals"/>
+							</HBox>
+							<HBox>
+								<Image src="./images/worldwide.png" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiLargeMarginBottom" width="20rem"
+									text="178 active customers in 2019 H1"/>
+								<Image src="./images/partners.png" class="sapUiSmallMarginEnd"/>
+								<Text class="listStyle sapUiSmallMarginBottom" 
+									text="76% of the revenue comes from 1+ year-long customers"/>
+							</HBox>
+						</VBox>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<OverflowToolbar height="4rem">
+							<Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" 
+								text="Brief Company History"/>
+						</OverflowToolbar>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell class="sapUiNoContentPadding">
+						<Table id="idProductsTable"
+							inset="false"
+							alternateRowColors="true"
+							items="{
+								path: 'HRData>/History',
+								sorter: {
+									path: 'year'
+								}
+							}">
+							<columns>
+								<Column
+									width="12em">
+									<Text text="Year" />
+								</Column>
+								<Column
+									minScreenWidth="Tablet"
+									demandPopin="true">
+									<Text text="Highlights" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text
+											text="{HRData>year}" />
+										<Text
+											text="{HRData>item}" />
+										
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+				<l:BlockLayoutRow>
+					<l:BlockLayoutCell
+						title="Hand Over Your IT Infrastructure Pains to Us"
+						titleAlignment="Begin"
+						class="customCellImageBackground">
+						<Text text="Reach out to our team to get more details on the most efficient ways to improve your IT infrastructure management process, accelerate the modernization and increase the efficiency of your IT environment." />
+						<l:titleLink>
+							<Link text="Hand Over Your IT Infrastructure Pains to Us" emphasized="true" press="onContactUsPress" />
+						</l:titleLink>
+					</l:BlockLayoutCell>
+				</l:BlockLayoutRow>
+			</l:BlockLayout>
+		</content>
+	</Panel>
+</core:FragmentDefinition>

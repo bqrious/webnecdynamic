@@ -1,0 +1,150 @@
+{
+	"sap.app": {
+		"id": "necs",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://detail-view",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "necs.view.V",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"libs": {
+				"sap.ui.core": {},
+				"sap.tnt": {},
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "necs.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"viewPath": "necs.view",
+				"bypassed": {
+					"target": "notFound"
+				},
+				"async": true
+			},
+			"routes": [
+				
+				{
+					"pattern": "Ooops!",
+					"name": "notFound",
+					"target": "notFound"
+				},
+				{
+					"pattern": "",
+					"name": "home",
+					"target": "home"
+				},
+				{
+					"pattern": "about",
+					"name": "about",
+					"target": "about"
+				},
+				{
+					"pattern": "about/{subSection}",
+					"name": "about",
+					"target": "about"
+				},
+				{
+					"pattern": "services/{subSection}/subSubSection:?query:",
+					"name": "services",
+					"target": "services"
+				},
+				{
+					"pattern": "industries/{subSection}/subSubSection:?query:",
+					"name": "industries",
+					"target": "industries"
+				},
+
+				{
+					"pattern": "case",
+					"name": "case",
+					"target": "case"
+				},
+				{
+					"pattern": "blog",
+					"name": "blog",
+					"target": "blog"
+				}
+				
+			],
+			"targets": {
+				"notFound": {
+					"viewId": "notFound",
+					"viewName": "NotFound",
+					"transition": "show"
+				},
+				"home": {
+					"viewId": "home",
+					"viewName": "Page1"
+				},
+	
+				"about": {
+					"viewId": "about",
+					"viewName": "About"
+				},
+				"services": {
+					"viewId": "services",
+					"viewName": "Services"
+				},
+				"industries": {
+					"viewId": "industries",
+					"viewName": "Industries"
+				},
+				"case": {
+					"viewId": "case",
+					"viewName": "HidayatResume"
+				},
+				"blog": {
+					"viewId": "blog",
+					"viewName": "ImageGroup"
+				}
+			}
+		}
+	}
+}

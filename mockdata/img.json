@@ -1,0 +1,161 @@
+{
+    "products":
+    {
+        "pic1": "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg",
+        "pic2": "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-6120-large.jpg",
+        "pic3": "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-6100-large.jpg",
+        "screw": "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/screw.jpg"
+    },
+    "pictures": [
+    {
+        "pict": "./images/healthcare/healthcare-crm-for-medical-and-research-center.png",
+        "text": "Healthcare CRM for Medical and Research Center"
+    },
+    {
+        "pict": "./images/healthcare/care-team-coordination-application.png",
+        "text": "Care Team Coordination Application for 120+ Caregivers"
+    }],
+    "healthsw": [
+    {
+        "mainTitle": "Solutions to Beat the Challenge",
+        "mainText": "Our IT specialists create convenient software to help you optimize workflows, analyze healthcare data and enable reimbursable remote care, all wrapped up in an intuitive visual design.",
+        "items": [
+        {
+            "pict": "./images/healthcare/chronic_disease_management.svg",
+            "title": "Chronic disease management",
+            "text": "Offer your patients personalized care and continuous communication between appointments. Simplify their daily routine by timely notifying about medication intake, giving tips on nutrition and physical activity and reminding about the importance of journalizing subjective and objective. With a holistic system including a patient mobile application and a central server connected to the EHR, you can improve population health, patients’ outcomes and your revenues. Empower chronic disease management"
+        },
+        {
+            "pict": "./images/healthcare/medical_image_analysis.svg",
+            "title": "Medical image analysis",
+            "text": "Whether a researcher, innovator or medical device manufacturer, you can assist clinical stakeholders in tackling tough challenges of 3D imaging across modalities. Help your clients to reduce the number of misdiagnosis cases, medical errors and exploratory surgeries. Unlock the capabilities of medical image processing and analysis for your organization. Back up your clinical & research decisions"
+        }]
+    },
+    {
+        "mainTitle": "Consulting Services That Answer the Need",
+        "mainText": "With the universal approach to healthcare professionals and patients across different organizations, packaged solutions may fail to support your unique processes. We offer convenient custom-made software aligned with your goals and destined to help end users perform their tasks\n\nIn cooperation with the stakeholders, ScienceSoft’s tech specialists will discuss your needs and requirements to implement the right solution automating, optimizing and streamlining the organization’s processes.",
+        "items": [
+        {
+            "pict": "./images/healthcare/chronic_disease_management.svg",
+            "title": "Chronic disease management",
+            "text": "Offer your patients personalized care and continuous communication between appointments. Simplify their daily routine by timely notifying about medication intake, giving tips on nutrition and physical activity and reminding about the importance of journalizing subjective and objective. With a holistic system including a patient mobile application and a central server connected to the EHR, you can improve population health, patients’ outcomes and your revenues. Empower chronic disease management"
+        },
+        {
+            "pict": "./images/healthcare/medical_image_analysis.svg",
+            "title": "Medical image analysis",
+            "text": "Whether a researcher, innovator or medical device manufacturer, you can assist clinical stakeholders in tackling tough challenges of 3D imaging across modalities. Help your clients to reduce the number of misdiagnosis cases, medical errors and exploratory surgeries. Unlock the capabilities of medical image processing and analysis for your organization. Back up your clinical & research decisions"
+        }]
+    },
+    {
+        "mainTitle": "Uplifting Care Delivery: Start with a Proof-of-Concept",
+        "mainText": "With the universal approach to healthcare professionals and patients across different organizations, packaged solutions may fail to support your unique processes. We offer convenient custom-made software aligned with your goals and destined to help end users perform their tasks&#xA;&#xA;In cooperation with the stakeholders, ScienceSoft’s tech specialists will discuss your needs and requirements to implement the right solution automating, optimizing and streamlining the organization’s processes.",
+        "items": [
+        {
+            "pict": "./images/healthcare/chronic_disease_management.svg",
+            "title": "Chronic disease management",
+            "text": "Offer your patients personalized care and continuous communication between appointments. Simplify their daily routine by timely notifying about medication intake, giving tips on nutrition and physical activity and reminding about the importance of journalizing subjective and objective. With a holistic system including a patient mobile application and a central server connected to the EHR, you can improve population health, patients’ outcomes and your revenues. Empower chronic disease management"
+        },
+        {
+            "pict": "./images/healthcare/medical_image_analysis.svg",
+            "title": "Medical image analysis",
+            "text": "Whether a researcher, innovator or medical device manufacturer, you can assist clinical stakeholders in tackling tough challenges of 3D imaging across modalities. Help your clients to reduce the number of misdiagnosis cases, medical errors and exploratory surgeries. Unlock the capabilities of medical image processing and analysis for your organization. Back up your clinical & research decisions"
+        }]
+    }
+   
+],
+ "bankingsw": [
+    {
+        "mainTitle": "Banking Software and IT Services for Banks",
+        "mainText": "For 14 years NECESSITY delivers various banking software solutions (portals, intranets, mobile apps, CRM, etc.), manages their successful implementation, integration, testing and deployment as well as ensures their solid support.\n\nWe provide both platform-based and custom banking software that serves the needs of retail and corporate banking and improves the relationships between financial facilities and their customers, attracting and retaining the most profitable clientele..",
+        "items": [
+        {
+            "pict": "./images/banking/banking-software-it-services-for-banks.svg",
+            "title": "Chronic disease management",
+            "text": "Offer your patients personalized care and continuous communication between appointments. Simplify their daily routine by timely notifying about medication intake, giving tips on nutrition and physical activity and reminding about the importance of journalizing subjective and objective. With a holistic system including a patient mobile application and a central server connected to the EHR, you can improve population health, patients’ outcomes and your revenues. Empower chronic disease management"
+        },
+        {
+            "pict": "./images/healthcare/medical_image_analysis.svg",
+            "title": "Medical image analysis",
+            "text": "Whether a researcher, innovator or medical device manufacturer, you can assist clinical stakeholders in tackling tough challenges of 3D imaging across modalities. Help your clients to reduce the number of misdiagnosis cases, medical errors and exploratory surgeries. Unlock the capabilities of medical image processing and analysis for your organization. Back up your clinical & research decisions"
+        }]
+    },
+    {
+        "mainTitle": "Our Portfolio",
+        "mainText": "With the universal approach to healthcare professionals and patients across different organizations, packaged solutions may fail to support your unique processes. We offer convenient custom-made software aligned with your goals and destined to help end users perform their tasks\n\nIn cooperation with the stakeholders, ScienceSoft’s tech specialists will discuss your needs and requirements to implement the right solution automating, optimizing and streamlining the organization’s processes.",
+        "items": [
+        {
+            "pict": "./images/banking/custom-online-and-mobile-banking-for-an-asian-bank.jpg",
+            "title": "Online and Mobile Banking Solutions for an Asian Bank with 3+ mln Customers",
+            "text": "Offer your patients personalized care and continuous communication between appointments. Simplify their daily routine by timely notifying about medication intake, giving tips on nutrition and physical activity and reminding about the importance of journalizing subjective and objective. With a holistic system including a patient mobile application and a central server connected to the EHR, you can improve population health, patients’ outcomes and your revenues. Empower chronic disease management"
+        },
+        {
+            "pict": "./images/banking/award-winning-mobile-banking-app.jpg",
+            "title": "Award-winning Mobile Banking App",
+            "text": "Whether a researcher, innovator or medical device manufacturer, you can assist clinical stakeholders in tackling tough challenges of 3D imaging across modalities. Help your clients to reduce the number of misdiagnosis cases, medical errors and exploratory surgeries. Unlock the capabilities of medical image processing and analysis for your organization. Back up your clinical & research decisions"
+        }]
+    },
+    {
+        "mainTitle": "Banking Sofware Solutions We Implement",
+        "mainText": "NECESSITY provides a complete set of custom and platform-based solutions designed to meet your needs",
+        "items": [
+        {
+            "pict": "./images/banking/internet_banking.svg",
+            "title": "Internet banking",
+            "text": "Answer the ever-growing customers’ needs for secure 24/7 access to their banking accounts with custom internet banking\n\nWhether you want to implement a solution from scratch or update your current obsolete software, ScienceSoft will provide you with rich functional scope and ensure implementation of the best online banking practices. With custom internet banking solutions, your clients will be able to enjoy the following functionality:"
+        },
+        {
+            "pict": "./images/banking/mobile_banking.svg",
+            "title": "Mobile banking",
+            "text": "Provide your customers with a full range of banking services on their phones.\n\nBacked by 14 years of experience in mobile app development, ScienceSoft will help you implement custom mobile banking software tailored to your specific needs. Our software solutions vary from basic to A-class mobile banking apps and include both core and advanced functionality (e.g., personal financial management, loyalty program integration, personalized bank product offering, augmented reality, and more)."
+        }]
+    },
+    {
+        "mainTitle": "Thrive with Banking Software",
+        "mainText": "At NECESSITY, we help our customers reap the following benefits:",
+        "items": [
+        {
+            "pict": "./images/banking/banking-software-benefits.svg",
+            "title": "Internet banking",
+            "text": "Answer the ever-growing customers’ needs for secure 24/7 access to their banking accounts with custom internet banking\n\nWhether you want to implement a solution from scratch or update your current obsolete software, ScienceSoft will provide you with rich functional scope and ensure implementation of the best online banking practices. With custom internet banking solutions, your clients will be able to enjoy the following functionality:"
+        }
+    	]
+    },
+    {
+        "mainTitle": "We Ensure Regulatory Compliance",
+        "mainText": "NECESSITY banking software solutions that we develop fully compliant with regulatory standards, including FRS requirements, Dodd-Frank Act, Payment Application Data Security Standard (PA-DSS), Payment Card Industry Data Security Standard (PCI-DSS), SOX, and others.",
+        "items": [
+        {
+            "pict": "./images/banking/banking-software-benefits.svg",
+            "title": "Internet banking",
+            "text": "Answer the ever-growing customers’ needs for secure 24/7 access to their banking accounts with custom internet banking\n\nWhether you want to implement a solution from scratch or update your current obsolete software, ScienceSoft will provide you with rich functional scope and ensure implementation of the best online banking practices. With custom internet banking solutions, your clients will be able to enjoy the following functionality:"
+        }
+    	]
+    },
+        {
+        "mainTitle": "What We Offer",
+        "mainText": "NECESSITY's banking software solutions that we develop fully compliant with regulatory standards, including FRS requirements, Dodd-Frank Act, Payment Application Data Security Standard (PA-DSS), Payment Card Industry Data Security Standard (PCI-DSS), SOX, and others.",
+        "items": [
+        {
+            "pict": "./images/banking/our-services.svg",
+            "title": "Internet banking",
+            "text": "Answer the ever-growing customers’ needs for secure 24/7 access to their banking accounts with custom internet banking\n\nWhether you want to implement a solution from scratch or update your current obsolete software, ScienceSoft will provide you with rich functional scope and ensure implementation of the best online banking practices. With custom internet banking solutions, your clients will be able to enjoy the following functionality:"
+        }
+    	]
+    }
+
+
+   
+],
+
+    "images": [
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/bigimgs/273303_low_jpg_srgb.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/bigimgs/273537_low_jpg_srgb.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/bigimgs/274731_high_jpg_eci_rgb.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1603.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2002.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2020.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2025.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2026.jpg",
+        "https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-2027.jpg"
+    ]
+}

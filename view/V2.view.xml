@@ -1,0 +1,279 @@
+<mvc:View
+	controllerName="sap.tnt.sample.ToolHeaderIconTabHeader.C"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:gmaps="openui5.googlemaps"
+	height="100%">
+	<tnt:ToolHeader id="toolHeader">
+		<Button icon="sap-icon://home" type="Transparent" press=".onHomePress">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<Image id="imgTDK" src="./images/necessity.png" class="sapUiTinyMarginBeginEnd"/>
+		<IconTabHeader
+			id="iconTabHeader"
+			selectedKey="invalidKey"
+			select=".onSelectTab"
+			showOverflowSelectList="true"
+			backgroundDesign="Transparent"
+			mode="Inline">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
+			</layoutData>
+			<items>
+				<IconTabFilter text="ABOUT" >
+											<f:SimpleForm 
+							labelSpanL="6"
+							labelSpanM="6"
+							editable="true"
+							layout="ResponsiveGridLayout">
+							<f:content>
+					  			<Text text="Filtered items goes here ..." />
+					  		</f:content>
+						</f:SimpleForm>
+</IconTabFilter>
+				<IconTabFilter text="SERVICES" />
+				<IconTabFilter text="INDUSTRIES" />
+				<IconTabFilter text="BLOG" />
+			</items>
+		</IconTabHeader>
+		<Button id="contactButton" text="CONTACT US" type="Ghost" press="onContactButtonPress"/>
+		<ToolbarSpacer>
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" minWidth="16px" />
+			</layoutData>
+		</ToolbarSpacer>
+		<Button icon="sap-icon://comment" type="Transparent">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<MenuButton icon="sap-icon://hint" type="Transparent">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+			<Menu>
+				<MenuItem text="Edit" icon="sap-icon://edit" />
+				<MenuItem text="Save" icon="sap-icon://save" />
+			</Menu>
+		</MenuButton>
+		<Button id="searchButton" icon="sap-icon://search" type="Transparent" press="onSearchButtonPress">
+		<layoutData>
+			<OverflowToolbarLayoutData priority="NeverOverflow" />
+		</layoutData>
+		</Button>
+	</tnt:ToolHeader>
+	<Panel>
+		<Label id="labelId" text="Home Screen" />
+		<l:BlockLayout
+			id="BlockLayout"
+			background="Default">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell class="sapUiNoContentPadding">
+					<Carousel id="carou" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+						<pages>
+							<Image src="./images/infra.png" alt="Example picture of speakers"/>
+							<Image src="./images/apps.jpg" alt="Example picture of USB flash drive"/>
+							<Image src="./images/helpdesk.png" alt="Example picture of spotlight"/>
+							<Image src="./images/apps2.jpg" alt="Example picture of screw"/>
+
+						</pages>
+					</Carousel>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+		<Toolbar>
+				<Button type="Back" />
+				<ToolbarSpacer/>
+				<Title text="Our Services" level="H1" titleStyle="H1"/>
+				<ToolbarSpacer/>
+			</Toolbar>
+				<l:BlockLayout
+			id="BlockLayout1"
+			background="Default">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet11"
+					backgroundColorShade="ShadeC">
+					<l:VerticalLayout>
+
+						<Image id="imgTDK1" src="./images/sp_dev.png" mode="Image"	backgroundPosition="center" class="sapUiTinyMarginBeginEnd"/>
+
+						<Title
+							id="productTile"
+							text="Infrastructure"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom"/>
+						<Text
+							text="{i18n>productContent}"
+							class="sapUiTinyMarginBottom"/>
+						<Link
+							text="{i18n>accessLink}"
+							tooltip="{i18n>accessProductsLink}"/>
+						<Link
+							text="{i18n>learnLink}"
+							tooltip="{i18n>learnProductsTooltip}"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet10"
+					backgroundColorShade="ShadeA">
+					<l:VerticalLayout>
+
+						<Image id="imgTDK2" src="./images/cs_dev.png" mode="Image"	backgroundPosition="center" class="sapUiTinyMarginBeginEnd"/>
+
+						<Title
+							id="productTile2"
+							text="Application"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom"/>
+						<Text
+							text="{i18n>productContent}"
+							class="sapUiTinyMarginBottom"/>
+						<Link
+							text="{i18n>accessLink}"
+							tooltip="{i18n>accessProductsLink}"/>
+						<Link
+							text="{i18n>learnLink}"
+							tooltip="{i18n>learnProductsTooltip}"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet11"
+					backgroundColorShade="ShadeC">
+					<l:VerticalLayout>
+
+						<Image id="imgTDK3" src="./images/sd_outsource.png" mode="Image"	backgroundPosition="center" class="sapUiTinyMarginBeginEnd"/>
+
+						<Title
+							id="productTile3"
+							text="Managed Services"
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom"/>
+						<Text
+							text="{i18n>productContent}"
+							class="sapUiTinyMarginBottom"/>
+						<Link
+							text="{i18n>accessLink}"
+							tooltip="{i18n>accessProductsLink}"/>
+						<Link
+							text="{i18n>learnLink}"
+							tooltip="{i18n>learnProductsTooltip}"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+	
+			</l:BlockLayoutRow>
+
+
+		</l:BlockLayout>
+			<content>
+			<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" >
+			<f:toolbar>
+				<Toolbar id="TB1">
+					<Title id="Title1" text="Address"/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://settings"/>
+					<Button icon="sap-icon://drop-down-list" />
+				</Toolbar>
+			</f:toolbar>
+			<f:content>
+				<Toolbar ariaLabelledBy="Title2">
+					<Title id="Title2" text="Office"/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://settings"/>
+				</Toolbar>
+				<Label text="Name" />
+				<Input value="{SupplierName}" />
+				<Label text="Street/No." />
+				<Input value="{Street}">
+				</Input>
+				<Input value="{HouseNumber}">
+					<layoutData>
+						<l:GridData span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+				<Label text="ZIP Code/City" />
+				<Input value="{ZIPCode}">
+					<layoutData>
+						<l:GridData span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+				<Input value="{City}" />
+				<Label text="Country" />
+				<Select id="country" selectedKey="{Country}">
+					<items>
+						<core:Item text="England" key="England"/>
+						<core:Item text="Germany" key="Germany"/>
+						<core:Item text="USA" key="USA"/>
+					</items>
+				</Select>
+				<Toolbar ariaLabelledBy="Title3">
+					<Title id="Title3" text="Online"/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://settings"/>
+				</Toolbar>
+				<Label text="Web" />
+				<Input value="{Url}" type="Url" />
+				<Label text="Twitter" />
+				<Input value="{Twitter}" />
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm id="SimpleFormDisplay480_12120-2"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Maps"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="true">
+			<f:content>
+				<gmaps:Map height="250px" zoom="12" lat="-33.895" lng="151.275" 
+     apiKey="AIzaSyBNiiEJCwoTvAcMjbagbIVWqw3IbwK4TE4">
+        <gmaps:markers>
+            <gmaps:Marker lat="-33.895" lng="151.275" info="Bondi Beach" />
+        </gmaps:markers>
+    </gmaps:Map>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+
+		
+			</content>
+	
+		
+	</Panel>
+</mvc:View>

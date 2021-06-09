@@ -1,0 +1,98 @@
+{
+  "Employees": [
+	{
+	  "firstName": "Michael",
+	  "lastName": "Adams"
+	},
+	{
+	  "firstName": "John",
+	  "lastName": "Miller"
+	}
+  ],
+  "Employee": [
+    {
+          "name": "Hidayat",
+          "picture": "./images/hid3.png",
+          "job": "CEO and Founder"
+      },
+          {
+          "name": "Bill Gates",
+          "picture": "./images/bill.png",
+          "job": "SVP Applications"
+      },
+    {
+          "name": "Elon Musk",
+          "picture": "./images/elon.png",
+          "job": "SVP Infrastructure"
+      },
+    {
+          "name": "Larry Page",
+          "picture": "./images/larry.png",
+          "job": "SVP Managed Services"
+      },
+
+      {
+          "name": "Michael Adams",
+          "picture": "./test-resources/sap/uxap/images/person.png",
+          "job": "Scrum Master"
+      },
+      {
+          "name": "John Miller",
+          "picture": "./images/John_Miller.png",
+          "job": "Product Owner"
+      },
+      {
+          "name": "Richard Wilson",
+          "picture": "./test-resources/sap/uxap/images/person.png",
+          "job": "Ux Designer"
+      },
+      {
+          "name": "Julie Armstrong",
+          "picture": "./test-resources/sap/uxap/images/person.png",
+          "job": "Quality Engineer"
+      },
+      {
+          "name": "Denise Smith",
+          "picture": "./test-resources/sap/uxap/images/person.png",
+          "job": "Team Member"
+      },
+      {
+          "name": "Richard Adams",
+          "picture": "./test-resources/sap/uxap/images/person.png",
+          "job": "Team Member"
+      }
+  ],
+  "History": [
+    {
+          "year": "1989, April",
+          "item": "Necessity is founded as a computer-aided innovation software company"
+      },
+    {
+          "year": "1992",
+          "item": "Necessity matures as an exclusive software development partner of Invention Machine Corporation (now part of IHS Markit), creating solutions and products that power 40% of Fortune 500 companies"
+      },
+    {
+          "year": "2000",
+          "item": "Necessity becomes IBM Core Supplier for Technical Services and Microsoft Gold Certified Partner"
+    }
+  ],
+
+  "Location": [
+    {
+      "CoName": "NECESSITY INC",
+      "Street": "Jalan Pemuda",
+      "HouseNumber": "C42",
+      "ZIPCode": "31415",
+      "City": "Depok",
+      "Country": "Indonesia",
+      "Url": "http://www.necessity.tech",
+      "Twitter": "@necs",
+      "Tel" : "+62 6227 747474",
+      "Sms" : "+62 173 123456",
+      "Email" : "cs@necessity.tech",
+      "Lat":"-6.404753",
+      "Long":"106.824546",
+      "APIkey":"AIzaSyBNiiEJCwoTvAcMjbagbIVWqw3IbwK4TE4"
+    }
+  ]
+}

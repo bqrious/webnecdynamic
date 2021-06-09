@@ -1,0 +1,157 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:l="sap.ui.layout">
+    <Panel id="healthcareIndustriesPanel" width="auto" height="auto">
+        <headerToolbar>
+            <OverflowToolbar height="4rem">
+                <Title class="titleBold sa" wrapping="true" level="H1" titleStyle="H1" text="Medical IT Consulting Services" />
+            </OverflowToolbar>
+        </headerToolbar>
+        <content>
+            <l:BlockLayout id="BlockLayout" background="Default">
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <Carousel id="carou" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+                            <pages>
+                                <Image src="{Healthcare>/svgLogo}" alt="Example picture of speakers" />
+                            </pages>
+                        </Carousel>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <Title wrapping="true" level="H4" titleStyle="H4" text="NECESSITY brings in 14 years in healthcare IT consulting and development to back up medical clients in their calling to save lives and sustain high population health with software built around individuals and their needs.&#xA;&#xA;We provide hospitals, clinics, assisted living facilities and other organizations with task-driven services to help them reduce readmissions, protect PHI, balance costs and improve outcomes." />
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="Our Health Software Solutions" />
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <Carousel id="carou4" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged" pages="{IndustryData>/pictures}">
+                            <pages>
+                                <VBox alignItems="Center" justifyContent="Center">
+                                    <Image src="{IndustryData>pict}" alt="Example picture of speakers" />
+                                    <Title wrapping="true" level="H2" titleStyle="H2" text="{IndustryData>text}" />
+                                </VBox>
+                            </pages>
+                        </Carousel>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox alignItems="Center" justifyContent="Center">
+                            <Button class="buttonStyle" id="contactButton" text="LEARN MORE" type="Emphasized" press="onContactUsPress" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/healthsw/0/mainTitle}" />
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox class="sapUiSmallMargin">
+                            <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/0/mainText}" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell width="10">
+                            <Image src="{IndustryData>/healthsw/0/items/0/pict}" alt="Example picture of speakers" />
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell width="90">
+                            <VBox>
+                                <Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" text="{IndustryData>/healthsw/0/items/0/title}" />
+                                <Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/0/items/0/text}" />
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell width="10">
+                            <Image src="{IndustryData>/healthsw/0/items/1/pict}" alt="Example picture of speakers" />
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell width="90">
+                            <VBox>
+                                <Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" text="{IndustryData>/healthsw/0/items/1/title}" />
+                                <Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/0/items/1/text}" />
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/healthsw/1/mainTitle}" /> 
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox class="sapUiSmallMargin">
+                            <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/1/mainText}" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell width="10">
+                            <Image src="{IndustryData>/healthsw/1/items/0/pict}" alt="Example picture of speakers" />
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell width="90">
+                            <VBox>
+                                <Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" text="{IndustryData>/healthsw/1/items/0/title}" />
+                                <Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/1/items/0/text}" />
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:content>
+                        <l:BlockLayoutCell width="10">
+                            <Image src="{IndustryData>/healthsw/1/items/1/pict}" alt="Example picture of speakers" />
+                        </l:BlockLayoutCell>
+                        <l:BlockLayoutCell width="90">
+                            <VBox>
+                                <Title class="titleBold" wrapping="true" level="H3" titleStyle="H3" text="{IndustryData>/healthsw/1/items/1/title}" />
+                                <Title class="sapUiTinyMarginBottom" wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/1/items/1/text}" />
+                            </VBox>
+                        </l:BlockLayoutCell>
+                    </l:content>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <OverflowToolbar height="4rem">
+                            <Title class="titleBold" wrapping="true" level="H1" titleStyle="H1" text="{IndustryData>/healthsw/2/mainTitle}" /> 
+                        </OverflowToolbar>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox class="sapUiSmallMargin">
+                            <Title wrapping="true" level="H4" titleStyle="H4" text="{IndustryData>/healthsw/2/mainText}" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell class="sapUiNoContentPadding">
+                        <VBox alignItems="Center" justifyContent="Center">
+                            <Button id="quoteButton" text="GET A QUOTE" press="onGetQuotePress" />
+                        </VBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+
+
+
+            </l:BlockLayout>
+        </content>
+    </Panel>
+</core:FragmentDefinition>

@@ -1,0 +1,128 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:layout="sap.ui.layout"
+	xmlns:m="sap.m"
+	xmlns:goals="SharedBlocks.goals"
+	xmlns:personal="SharedBlocks.personal"
+	xmlns:employment="SharedBlocks.employment"
+	xmlns:core="sap.ui.core"
+	 xmlns:blockcolor="SharedBlocks"
+	controllerName="necs.controller.Services"
+	height="100%">
+	<ObjectPageLayout id="ObjectPageLayout"
+		showTitleInHeaderContent="true"
+		showEditHeaderButton="true"
+		alwaysShowContentHeader="true"
+		editHeaderButtonPress="handleEditBtnPress"
+		>
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+
+				<expandedHeading>
+						<m:Title text="SERVICES" wrapping="true" level="H1" titleStyle="H1"/>
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:FlexBox  fitContainer="true" alignItems="Center">
+						<m:Title text="SERVICES" wrapping="true"/>
+					</m:FlexBox>
+				</snappedHeading>
+
+				<snappedTitleOnMobile>
+					<m:Title text="Header Title On Phone"/>
+				</snappedTitleOnMobile>
+				<actions>
+					<m:Button text="Toggle Footer" press="handleLink1Press"/>
+				</actions>
+
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:FlexBox wrap="Wrap">
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Title text="We handle complex business challenges building all types of custom and platform-based solutions and providing a comprehensive set of end-to-end IT services." level="H2" titleStyle="H2" wrapping="true"/>
+				</layout:VerticalLayout>
+
+			
+			</m:FlexBox>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection id="servicetypesSection" title="Service Types">
+				<subSections>
+					<ObjectPageSubSection id="servicetypesSectionSS1" title="{/navigation/2/items/0/items/0/title}">
+						<blocks>
+							<core:Fragment fragmentName="necs.fragment.InfrastructureServices" type="XML" />	
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="servicetypesSectionSS2" title="{/navigation/2/items/0/items/1/title}">
+							<blocks>
+							<blockcolor:BlockBlue id="b1"/>
+						</blocks>
+						<actions>
+					<m:Button text="Toggle Footer" press="handleLink1Press"/>
+							<m:Button icon="sap-icon://expand"/>
+						</actions>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="servicetypesSectionSS3" title="{/navigation/2/items/0/items/2/title}">
+												<blocks>
+<m:Panel/>						
+</blocks>
+
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="servicetypesSectionSS4" title="{/navigation/2/items/0/items/3/title}">
+												<blocks>
+<m:Panel/>						
+</blocks>
+
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="servicetypesSectionSS5" title="{/navigation/2/items/0/items/4/title}">
+												<blocks>
+<m:Panel/>						
+</blocks>
+
+					</ObjectPageSubSection>
+						<ObjectPageSubSection id="servicetypesSectionSS6" title="{/navigation/2/items/0/items/5/title}">
+												<blocks>
+<m:Panel/>						
+</blocks>
+
+					</ObjectPageSubSection>
+
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection id="solutionsSection" title="SOLUTIONS" importance="Medium" subSections="{/navigation/2/items/1/items}">
+				<subSections>
+					<ObjectPageSubSection id="approachSectionSS1" title="{title}">
+						<blocks>
+							<personal:BlockPhoneNumber id="phone"/>
+							<personal:BlockSocial id="social"/>
+							<personal:BlockAdresses id="adresses"/>
+							<personal:BlockMailing id="mailing" columnLayout="1"/>
+						</blocks>
+					</ObjectPageSubSection>
+
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection id="platformsSection" title="PLATFORMS" subSections="{/navigation/2/items/2/items}">
+				<subSections>
+					<ObjectPageSubSection id="employmentSectionSS1" title="{title}" >
+						<blocks>
+							<m:Panel/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+		<footer>
+			<m:OverflowToolbar>
+				<m:ToolbarSpacer />
+				<m:Button type="Accept" text="Accept"/>
+				<m:Button type="Reject" text="Reject"/>
+			</m:OverflowToolbar>
+		</footer>
+	</ObjectPageLayout>
+</mvc:View>

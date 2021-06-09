@@ -1,0 +1,112 @@
+<mvc:View
+	controllerName="necs.controller.C"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	height="100%">
+	<tnt:ToolPage id="toolPage" sideExpanded="false">
+		<tnt:header>
+			<tnt:ToolHeader id="toolHeader" class="sapUiLargeMarginBottom">
+				<Button
+					id="sideNavigationToggleButton"
+					icon="sap-icon://menu2"
+					type="Transparent"
+					press=".onSideNavButtonPress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+				<Button icon="./images/N4.png" type="Transparent" tooltip="Home" press=".onHomePress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+				<IconTabHeader
+					id="iconTabHeader"
+					selectedKey="invalidKey"
+					select=".onSelectTab"
+					showOverflowSelectList="true"
+					backgroundDesign="Transparent"
+					mode="Inline">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
+					</layoutData>
+					<items>
+						<IconTabFilter text="ABOUT" key="about"/>
+						<IconTabFilter text="SERVICES" key="services" />
+						<IconTabFilter text="INDUSTRIES" key="industries" />
+						<IconTabFilter text="CASE STUDIES" key="case" />
+						<IconTabFilter text="BLOG" key="blog" />
+					</items>
+				</IconTabHeader>
+				<Button id="contactButton" text="CONTACT US" type="Ghost" press="onContactUsPress"/>
+
+				<ToolbarSpacer>
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" minWidth="16px" />
+					</layoutData>
+				</ToolbarSpacer>
+				<Button
+					id="userButton"
+					icon="sap-icon://account"
+					text="{UserModel>/logname}"
+					type="Transparent"
+					press="onUserNamePress">
+					<layoutData>
+						<OverflowToolbarLayoutData closeOverflowOnInteraction="false"/>
+					</layoutData>
+				</Button>
+				<Button icon="sap-icon://comment" type="Transparent">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+				<MenuButton icon="sap-icon://hint" type="Transparent">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+					<Menu>
+						<MenuItem text="Edit" icon="sap-icon://edit" />
+						<MenuItem text="Save" icon="sap-icon://save" />
+					</Menu>
+				</MenuButton>
+				<Button id="searchButton" icon="sap-icon://search" type="Transparent" press="onSearchButtonPress">
+				<layoutData>
+					<OverflowToolbarLayoutData priority="NeverOverflow" />
+				</layoutData>
+				</Button>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation
+				id="sideNavigation"
+				expanded="true"
+				selectedKey="{/selectedKey}"
+				itemSelect=".onItemSelect">
+				<tnt:NavigationList id="nList" items="{path: '/navigation', templateShareable: false}">
+					<tnt:NavigationListItem
+						text="{title}"
+						icon="{icon}"
+						enabled="{enabled}"
+						expanded="{expanded}"
+						visible="{visible}"
+						items="{items}"
+						key="{key}">
+						<tnt:NavigationListItem
+							text="{title}"
+							key="{key}"
+							enabled="{enabled}" />
+					</tnt:NavigationListItem>
+				</tnt:NavigationList>
+				<tnt:fixedItem>
+					<tnt:NavigationList items="{path: '/fixedNavigation', templateShareable: false}">
+						<tnt:NavigationListItem text="{value}" icon="{icon}" select="handleFixedNavPress" />
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<App id="app"/>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>

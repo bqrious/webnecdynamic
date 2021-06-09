@@ -1,0 +1,206 @@
+<mvc:View
+	controllerName="necs.controller.Page1"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:gmaps="openui5.googlemaps"
+	height="100%">
+	<Page showHeader="false" >
+		<l:BlockLayout
+			id="BlockLayout"
+			background="Default">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell class="sapUiNoContentPadding">
+					<Carousel id="carou" class="sapUiContentPadding" loop="true" pageChanged="onPageChanged">
+						<pages>
+							<Image src="./images/nec1s.png" alt="Example picture of speakers"/>
+							<Image src="./images/infra.png" alt="Example picture of speakers"/>
+							<Image src="./images/nec0.png" alt="Example picture of speakers"/>
+							<Image src="./images/apps.jpg" alt="Example picture of USB flash drive"/>
+							<Image src="./images/nec1s.png" alt="Example picture of speakers"/>
+							<Image src="./images/helpdesk.png" alt="Example picture of spotlight"/>
+							<Image src="./images/nec2.png" alt="Example picture of speakers"/>
+							<Image src="./images/apps2.jpg" alt="Example picture of screw"/>
+							<Image src="./images/nec3.png" alt="Example picture of speakers"/>
+
+						</pages>
+					</Carousel>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+		<Toolbar>
+				<ToolbarSpacer/>
+				<Title text="Our Services" level="H1" titleStyle="H1"/>
+				<ToolbarSpacer/>
+		</Toolbar>
+		<l:BlockLayout
+			id="BlockLayout1"
+			background="Default">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet11"
+					backgroundColorShade="ShadeC"
+					title="Infrastructure"
+					titleAlignment="Begin"
+					>
+					<l:titleLink>
+						<Link id="linkInfra" text="Infrastructure" emphasized="true" press="onServicesLinkPress" />
+					</l:titleLink>
+					<l:VerticalLayout>
+						<Image id="imgTDK1" src="./images/sp_dev.png" class="sapUiNoMargin"/>
+						<Title
+							id="productTile"
+							wrapping="true"
+							text="We apply our 10-year experience to offer a full set of infrastructure services. We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face."
+							level="H3"
+							titleStyle="H2"
+							class="sapUiNoMargin"/>
+						<Link
+							id="linkInfra2"
+							text="REVAMP MY OPERATIONS >"
+							tooltip="{i18n>accessProductsLink}"
+							press="onServices2LinkPress"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet10"
+					backgroundColorShade="ShadeA"
+					titleAlignment="Begin"
+					>
+					<l:titleLink>
+						<Link id="linkApps" text="Application" emphasized="true" press="onServicesLinkPress" />
+					</l:titleLink>
+
+					<l:VerticalLayout>
+
+						<Image id="imgTDK2" src="./images/cs_dev.png" mode="Image"	backgroundPosition="center" class="sapUiTinyMarginBeginEnd"/>
+
+						<Title
+							id="productTile2"
+							wrapping="true"
+							text="Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers, and QA experts."
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom"/>
+						<Link
+							id="linkApps2"
+							text="CRAFT MY PRODUTCS >"
+							tooltip="{i18n>learnProductsTooltip}"
+							press="onServices2LinkPress"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell
+					backgroundColorSet="ColorSet11"
+					backgroundColorShade="ShadeC"
+					titleAlignment="Begin"
+					>
+					<l:titleLink>
+						<Link id="linkManServ" text="Managed Services" emphasized="true" press="onServicesLinkPress" />
+					</l:titleLink>
+
+					<l:VerticalLayout>
+
+						<Image id="imgTDK3" src="./images/sd_outsource.png" mode="Image"	backgroundPosition="center" class="sapUiTinyMarginBeginEnd"/>
+
+						<Title
+							id="productTile3"
+							wrapping="true"
+							text="Comprehensive care of your cloud or on-premises infrastructure and applications with our consulting, implementation, management and support, security, and help desk services."
+							level="H3"
+							titleStyle="H2"
+							class="sapUiTinyMarginTopBottom"/>
+						<Link
+							id="linkManServ2"
+							text="SHOULDER MY PROJECT >"
+							tooltip="{i18n>learnProductsTooltip}"
+							press="onServices2LinkPress"/>
+					</l:VerticalLayout>
+				</l:BlockLayoutCell>
+	
+			</l:BlockLayoutRow>
+
+
+		</l:BlockLayout>
+			<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="SimpleFormToolbar"
+					editable="true"
+					layout="ResponsiveGridLayout"
+					labelSpanXL="4"
+					labelSpanL="3"
+					labelSpanM="4"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="0"
+					emptySpanL="4"
+					emptySpanM="0"
+					emptySpanS="0"
+					columnsXL="2"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false"
+					ariaLabelledBy="Title1" >
+					<f:toolbar>
+						<Toolbar id="TB1">
+							<Title id="Title1" text="Find Us"/>
+							<ToolbarSpacer />
+							<Button icon="sap-icon://settings"/>
+							<Button icon="sap-icon://drop-down-list" />
+						</Toolbar>
+					</f:toolbar>
+					<f:content>
+						<Toolbar ariaLabelledBy="Title2">
+							<Title id="Title2" text="Office"/>
+							<ToolbarSpacer />
+							<Button icon="sap-icon://settings"/>
+						</Toolbar>
+						<Label text="Name" />
+						<Input value="{CoName}" />
+						<Label text="Street/No." />
+						<Input value="{Street}">
+						</Input>
+						<Input value="{HouseNumber}">
+							<layoutData>
+								<l:GridData span="XL2 L1 M3 S4" />
+							</layoutData>
+						</Input>
+						<Label text="ZIP Code/City" />
+						<Input value="{ZIPCode}">
+							<layoutData>
+								<l:GridData span="XL2 L1 M3 S4" />
+							</layoutData>
+						</Input>
+						<Input value="{City}" />
+						<Label text="Country" />
+						<Select id="country" selectedKey="{Country}">
+							<items>
+								<core:Item text="England" key="England"/>
+								<core:Item text="Indonesia" key="Indonesia"/>
+								<core:Item text="USA" key="USA"/>
+							</items>
+						</Select>
+						<Label text="Web" />
+						<Input value="{Url}" type="Url" />
+						<Label text="Twitter" />
+						<Input value="{Twitter}" />
+						<Toolbar ariaLabelledBy="Title3">
+							<Title id="Title3" text="Location"/>
+							<ToolbarSpacer />
+							<Button icon="sap-icon://settings"/>
+						</Toolbar>
+						<gmaps:Map height="250px" zoom="12" lat="{Lat}" lng="{Long}" 
+					     apiKey="AIzaSyBNiiEJCwoTvAcMjbagbIVWqw3IbwK4TE4">
+					        <gmaps:markers>
+					            <gmaps:Marker lat="{Lat}" lng="{Long}" info="{City}" />
+					        </gmaps:markers>
+					    </gmaps:Map>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>		
+			</content>
+		</Page>
+
+</mvc:View>

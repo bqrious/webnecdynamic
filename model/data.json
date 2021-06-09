@@ -1,0 +1,352 @@
+{
+	"navigation": [
+		{
+			"title": "ABOUT",
+			"icon": "sap-icon://employee",
+			"expanded": false,
+			"key": "about",
+			"visible": false,
+			"items": [
+				{
+					"title": "Company",
+					"key": "about_company"
+				},
+				{
+					"title": "Vision and Mission",
+					"key": "about_vision"
+				},
+				{
+					"title": "Recognition",
+					"key": "about_recognition"
+				}
+			]
+		},
+		{
+			"title": "SERVICES",
+			"icon": "sap-icon://building",
+			"expanded": true,
+			"key": "services",
+			"visible": false,
+			"items": [
+				{
+					"title": "Service Types",
+					"key": "services_servicetypes",
+					"items": [
+						{
+							"title": "Infrastructure Services",
+							"key": "services_servicetypes_infra"
+						},
+						{
+							"title": "Application Services",
+							"key": "services_servicetypes_apps"
+						},
+						{
+							"title": "Software Development",
+							"key": "services_servicetypes_softdev"
+						},
+						{
+							"title": "Managed IT Services",
+							"key": "services_servicetypes_manit"
+						},
+						{
+							"title": "Help Desk Services",
+							"key": "services_servicetypes_help"
+						},
+						{
+							"title": "IT Consulting",
+							"key": "services_servicetypes_itcons"
+						}
+
+					]
+
+				},
+				{
+					"title": "Solutions",
+					"key": "services_solutions",
+					"items": [
+						{
+							"title": "Data Analytics",
+							"key": "services_solutions_data"
+						},
+						{
+							"title": "CRM",
+							"key": "services_solutions_crm"
+						},
+						{
+							"title": "Cybersecurity",
+							"key": "services_solutions_cybersec"
+						},
+						{
+							"title": "Internet of Things",
+							"key": "services_solutions_iot"
+						},
+						{
+							"title": "Image Analysis",
+							"key": "services_solutions_img"
+						},
+						{
+							"title": "Ecommerce",
+							"key": "services_solutions_ecom"
+						}
+
+
+					]
+
+				},
+				{
+					"title": "Platforms",
+					"key": "services_platforms",
+					"items": [
+						{
+							"title": "Windows",
+							"key": "services_platforms_windows",
+							"fragment":"necs.fragment.ManagementTeam"
+						},
+						{
+							"title": "Linux",
+							"key": "services_platforms_linux",
+							"fragment":"necs.fragment.ManagementTeam"
+
+						},
+						{
+							"title": "Android",
+							"key": "services_platforms_android",
+							"fragment":"necs.fragment.ManagementTeam"
+
+						},
+						{
+							"title": "IOS",
+							"key": "services_platforms_ios",
+							"fragment":"necs.fragment.ManagementTeam"
+
+						}
+					]
+
+				}
+			]
+		},
+		{
+			"title": "INDUSTRIES",
+			"icon": "sap-icon://card",
+			"expanded": false,
+			"key": "industries",
+			"visible": false,
+			"items": [
+				{
+					"title": "Healthcare",
+					"key": "industries_healthcare"
+				},
+				{
+					"title": "Banking",
+					"key": "industries_banking"
+				},
+				{
+					"title": "Retail",
+					"key": "industries_retail"
+				},
+				{
+					"title": "Telecommunications",
+					"key": "industries_telecommunications"
+				},
+				{
+					"title": "Manufacturing",
+					"key": "industries_manufacturing"
+				},
+				{
+					"title": "Entertainment",
+					"key": "industries_entertainment"
+				},
+				{
+					"title": "Education",
+					"key": "industries_education"
+				},
+				{
+					"title": "Travel and Hospitality",
+					"key": "industries_travel"
+				},
+				{
+					"title": "Logistics and Transportation",
+					"key": "industries_logistics"
+				},
+				{
+					"title": "Oil and Gas",
+					"key": "industries_oil"
+				}
+			]
+		},
+		{
+			"title": "CASE STUDIES",
+			"icon": "sap-icon://card",
+			"expanded": false,
+			"key": "case",
+			"visible": false,
+			"items": [
+				{
+					"title": "Healthcare",
+					"key": "healthcare"
+				},
+				{
+					"title": "Banking",
+					"key": "banking"
+				},
+				{
+					"title": "Retail",
+					"key": "retail"
+				},
+				{
+					"title": "Telecommunications",
+					"key": "telecommunications"
+				},
+				{
+					"title": "Manufacturing",
+					"key": "manufacturing"
+				},
+				{
+					"title": "Entertainment",
+					"key": "entertainment"
+				},
+				{
+					"title": "Education",
+					"key": "education"
+				},
+				{
+					"title": "Travel and Hospitality",
+					"key": "travel"
+				},
+				{
+					"title": "Logistics and Transportation",
+					"key": "logistics"
+				},
+				{
+					"title": "Oil and Gas",
+					"key": "oil"
+				}
+			]
+		},
+
+		{
+			"title": "BLOG",
+			"icon": "sap-icon://action",
+			"expanded": false,
+			"key": "blog",
+			"visible": false,
+			"items": [
+				{
+					"title": "All Topics",
+					"key": "all"
+				},
+				{
+					"title": "Banking IT",
+					"key": "bankingit"
+				},
+				{
+					"title": "CIO Blog",
+					"key": "cioblog"
+				},
+				{
+					"title": "Healthcare IT",
+					"key": "healthit"
+				},
+				{
+					"title": "Enterprise Applications",
+					"key": "enterapp"
+				},
+				{
+					"title": "Web Portals",
+					"key": "Web Portals"
+				},
+				{
+					"title": "SharePoint",
+					"key": "Sharepoint"
+				},
+				{
+					"title": "Software Development",
+					"key": "softdev"
+				},
+				{
+					"title": "IT Consulting",
+					"key": "itcons"
+				},
+				{
+					"title": "Ecommerce",
+					"key": "ecommerce"
+				},
+				{
+					"title": "CRM",
+					"key": "crm"
+				},
+				{
+					"title": "UI and UX Design",
+					"key": "uiux"
+				},
+				{
+					"title": "Infrastructure Management",
+					"key": "ifsm"
+				},
+				{
+					"title": "Digital Transformation",
+					"key": "digitrans"
+				},
+				{
+					"title": "Data Analytics",
+					"key": "dataanal"
+				},
+				{
+					"title": "Business Intelligence",
+					"key": "busintel"
+				},
+				{
+					"title": "Big Data",
+					"key": "bigdata"
+				},
+				{
+					"title": "IT Service Management",
+					"key": "itsm"
+				},
+				{
+					"title": "Information Security",
+					"key": "infosec"
+				},
+				{
+					"title": "Internet of Things",
+					"key": "io"
+				}
+			]
+		}
+	],
+	"fixedNavigation": [
+		{
+			"title": "Email",
+			"icon": "sap-icon://email",
+			"value": "cs@necessity.asia"
+		},
+		{
+			"title": "Phone",
+			"icon": "sap-icon://call",
+			"value": "+6289662234466"
+		},
+		{
+			"title": "Locate",
+			"icon": "sap-icon://map",
+			"value": "Depok"
+
+		}
+	],
+	"headerItems": [
+		{
+			"text": "File"
+		},
+		{
+			"text": "Edit"
+		},
+		{
+			"text": "View"
+		},
+		{
+			"text": "Settings"
+		},
+		{
+			"text": "Help"
+		}
+	]
+}

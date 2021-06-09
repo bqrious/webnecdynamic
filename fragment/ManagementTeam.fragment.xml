@@ -1,0 +1,57 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:card="sap.f.cards">
+    <Panel id="quickViewCardContainer" width="auto" height="auto">
+        <FlexBox height="auto" alignItems="Start" justifyContent="Center">
+            <items>
+                <VBox alignItems="Center">
+                    <GenericTile class="sapUiTinyMarginBottom" backgroundImage="./images/hid1.png" press="press">
+                        <TileContent>
+                            <VBox>
+                                <Title text="HIDAYAT" class="genTileCustom" />
+                                <Text text="CEO and Founder" />
+                            </VBox>
+                        </TileContent>
+                    </GenericTile>
+                    <Image src="{HRData>/Employee/0/picture}" decorative="false" width="170px" densityAware="false">
+                        <detailBox>
+                            <LightBox>
+                                <LightBoxItem imageSrc="{HRData>/Employee/0/picture}" alt="Beamer" title="{HRData>/Employee/0/name}" subtitle="{HRData>/Employee/0/job}">
+                                </LightBoxItem>
+                            </LightBox>
+                        </detailBox>
+                        <!-- Fixes Hbox layout on Android Stock Browser for Android 5.0 -->
+                        <layoutData>
+                            <FlexItemData growFactor="1" shrinkFactor="0" />
+                        </layoutData>
+                    </Image>
+                    <Text width="50em" text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />
+                </VBox>
+            </items>
+        </FlexBox>
+        <HBox justifyContent="Center">
+            <VBox alignItems="Center">
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{HRData>/Employee/1/name}" subheader="{HRData>/Employee/1/job}" press="press">
+                    <TileContent>
+                        <ImageContent src="{HRData>/Employee/1/picture}" />
+                    </TileContent>
+                </GenericTile>
+                <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eo" />
+            </VBox>
+            <VBox alignItems="Center">
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{HRData>/Employee/2/name}" subheader="{HRData>/Employee/2/job}" press="press">
+                    <TileContent>
+                        <ImageContent src="{HRData>/Employee/2/picture}" />
+                    </TileContent>
+                </GenericTile>
+                <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eo" />
+            </VBox>
+            <VBox alignItems="Center">
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{HRData>/Employee/3/name}" subheader="{HRData>/Employee/3/job}" press="press">
+                    <TileContent>
+                        <ImageContent src="{HRData>/Employee/3/picture}" />
+                    </TileContent>
+                </GenericTile>
+                <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eo" />
+            </VBox>
+        </HBox>
+    </Panel>
+</core:FragmentDefinition>

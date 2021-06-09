@@ -1,0 +1,105 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:c="necs.lib">
+    <Panel id="quickViewCardContainer" width="auto" height="auto">
+        <l:VerticalLayout width="100%" class="gridWrapper">
+            <l:Grid containerQuery="true" position="Center" width="100%" defaultSpan="L3 M3 S3">
+                <Image id="img1" src="./images/hid1.png" height="90%" width="90%" class="sapUiNoMargin" />
+            </l:Grid>
+        </l:VerticalLayout>
+        <FlexBox id="FlexBox1" height="auto" alignItems="Start" justifyContent="Center">
+            <items>
+                <VBox id="VBox1" alignItems="Center">
+                </VBox>
+                <VBox id="VBox2" alignItems="Center">
+                </VBox>
+            </items>
+        </FlexBox>
+        <l:BlockLayout>
+            <l:BlockLayoutRow>
+                <l:BlockLayoutCell width="40%" />
+                <l:BlockLayoutCell backgroundColorSet="ColorSet11" backgroundColorShade="ShadeC" title="Infrastructure" titleAlignment="Begin" width="15%" class="cellImgBgHid">
+                    <l:titleLink>
+                        <Link id="linkInfra" text="HIDAYAT" emphasized="true" press="onServicesLinkPress" />
+                    </l:titleLink>
+                    <l:VerticalLayout>
+                        <Title id="productTile" wrapping="true" text="CEO" level="H3" titleStyle="H2" class="sapUiNoMargin" />
+                    </l:VerticalLayout>
+                </l:BlockLayoutCell>
+                <l:BlockLayoutCell width="40%" />
+            </l:BlockLayoutRow>
+        </l:BlockLayout>
+        <HBox justifyContent="Center">
+            <VBox alignItems="Center">
+               <c:Tile width="180px" height="175px" backgroundImage="./images/hid1.png">
+                    <c:content>
+                         <l:VerticalLayout>
+                              <Link text="Tile" class="sapMLnk sapMLnkEmphasized sapMLnkMaxWidth"/>
+                              <l:HorizontalLayout class="sapUiTinyMarginTopBottom">
+                                   <Text text="Here's your custom tile" textAlign="Begin"/>
+                              </l:HorizontalLayout>
+                         </l:VerticalLayout>
+                    </c:content>
+               </c:Tile>
+            </VBox>
+            <VBox alignItems="Center">
+                <GenericTile class="necsFontSpecifications tileLayout" header="Jessica D. Prince Senior Consultant" backgroundImage="./images/hid1.png" subheader="Department" press="press">
+                    <TileContent>
+                    	<VBox>
+                        <Title text="HIDAYAT" class="genTileCustom" />
+                        <Text text="CEO and Founder" />
+                    </VBox>
+                    </TileContent>
+                </GenericTile>
+                <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eo" />
+            </VBox>
+            <VBox alignItems="Center">
+                <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Jessica D. Prince Senior Consultant" subheader="Department" press="press">
+                    <TileContent>
+                        <ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/ProfileImage_LargeGenTile.png" />
+                    </TileContent>
+                </GenericTile>
+                <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eo" />
+            </VBox>
+        </HBox>
+        <FlexBox height="auto" alignItems="Start" justifyContent="Center">
+            <items>
+                <GenericTile header="Sales Fulfillment Application Title" subheader="Subtitle">
+                    <TileContent unit="EUR" footer="Current Quarter">
+                        <ImageContent src="sap-icon://home-share" />
+                    </TileContent>
+                </GenericTile>
+                <f:Card>
+                    <f:header>
+                        <card:Header title="Buy bus ticket on-line" subtitle="Buy a single drive ticket for a date" iconSrc="sap-icon://bus-public-transport" />
+                    </f:header>
+                    <f:content>
+                        <VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+                            <HBox justifyContent="SpaceBetween">
+                                <ComboBox width="120px" placeholder="From City" items="{
+									path: 'cities>/cities',
+									sorter: { path: 'text' }
+								}">
+                                    <core:Item key="{cities>key}" text="{cities>text}" />
+                                </ComboBox>
+                                <ComboBox width="120px" placeholder="To City" items="{
+									path: 'cities>/cities',
+									sorter: { path: 'text' }
+								}">
+                                    <core:Item key="{cities>key}" text="{cities>text}" />
+                                </ComboBox>
+                            </HBox>
+                            <HBox justifyContent="SpaceBetween">
+                                <DatePicker width="186px" placeholder="Choose Date ..." />
+                                <Button text="Book" type="Emphasized" />
+                            </HBox>
+                        </VBox>
+                    </f:content>
+                </f:Card>
+                <GenericTile header="Sales Fulfillment Application Title" subheader="Subtitle">
+                    <TileContent unit="EUR" footer="Current Quarter">
+                        <ImageContent src="sap-icon://home-share" />
+                    </TileContent>
+                </GenericTile>
+            </items>
+        </FlexBox>
+    </Panel>
+</core:FragmentDefinition>

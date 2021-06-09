@@ -1,0 +1,38 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Dialog title="Logon" id="ListDialog" afterClose="onAfterClose">
+        <l:VerticalLayout class="" width="500px">
+            <l:HorizontalLayout class="sapUiSmallMarginBegin">
+                <Label class="sapUiSmallMarginTop" text="PO Number" labelFor="poNumber" width="10em" />
+                <Input value="{/DATA/0/AUFNR}" editable="false"/>
+            </l:HorizontalLayout>
+            <l:HorizontalLayout class="sapUiSmallMarginBegin">
+                <Label class="sapUiSmallMarginTop" text="Batch Number" labelFor="batchNumber" width="10em"/>
+                <Input value="{/DATA/0/CHARG}"  editable="false"/>
+            </l:HorizontalLayout>
+            <l:HorizontalLayout class="sapUiSmallMarginBegin">
+                <Label class="sapUiSmallMarginTop" text="TR Number" labelFor="trNumber" width="10em" />
+                <Input value="{/DATA/0/TBNUM}" editable="false"/>
+            </l:HorizontalLayout>
+            <l:HorizontalLayout class="sapUiSmallMarginBegin">
+                <Label class="sapUiSmallMarginTop" text="SAP Printer" labelFor="sapPrinter" width="10em" />
+                 <ComboBox width="100%" id="selectSAPPR" tooltip="PRDES" placeholder="SAP Printer" showSecondaryValues="true" 
+                 	items="{path : '/DATA', 
+                 			sorter : {path : 'NAME', descending : true}
+                 			}">
+                        <items>
+                            <core:ListItem key="{NAME}" text="{NAME}" additionalText="{PASTANDORT}" />
+                        </items>
+                        <layoutData>
+                            <OverflowToolbarLayoutData shrinkable="true" minWidth="150px" />
+                        </layoutData>
+                    </ComboBox>
+            </l:HorizontalLayout>
+        </l:VerticalLayout>
+        <beginButton>
+            <Button text="Submit" press="onItemSelect" />
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onCancelBlog" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
