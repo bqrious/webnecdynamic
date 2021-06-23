@@ -3,3 +3,6 @@ node_modules
 
 # Ignore all text files
 *.txt
+
+# Ignore server test js
+server*.js
